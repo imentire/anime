@@ -31,6 +31,7 @@
 
 .ui-menu
   display flex
+  justify-content space-between
 
   &__link
     font-family 'FuturaPT-Heavy'
@@ -38,6 +39,9 @@
     color #fff
     text-decoration none
     padding 0 7px
+    text-transform uppercase
+    line-height 30px
+    font-weight bold
 
 .ui-user-button
   font-family 'FuturaPT-Demi'
@@ -47,9 +51,41 @@
   border-radius 25px
   padding 16px 38px
   cursor pointer
+  font-weight bold
 
   a
     padding 0 6px
 
   &__login
     border-right 2px solid #f80000
+
+.ui-footer
+
+  &__menu
+    background #2e2e2e
+    display flex
+    justify-content center
+
+  &__copyright
+    display flex
+    justify-content center
+
+.ui-footer-menu
+  width 980px
+  padding 22px 10px
+  display flex
+  justify-content space-between
+
+.ui-footer-menu-left
+  flex-basis 60%
+
+.ui-copyright
+  width 980px
+  padding 22px 10px
+
+  &__text
+    font-family 'FuturaPT-Book'
+    font-size 14px
+    line-height 18px
+    color #2e2e2e
+    padding-top 22px

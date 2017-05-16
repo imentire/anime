@@ -54,6 +54,35 @@ body
     block content
     
   footer.ui-footer
+    .ui-footer__menu
+      .ui-footer-menu
+        .ui-footer-menu-left
+          .ui-menu
+            .ui-menu__item
+              a.ui-menu__link(href="#") АНИМЕ #[br]
+              a.ui-menu__link(href="#") ДОРАМЫ #[br]
+              a.ui-menu__link(href="#") МАНГА
+            .ui-menu__item
+              a.ui-menu__link(href="#") ЖАНРЫ #[br]
+              a.ui-menu__link(href="#") ГОДА
+            .ui-menu__item
+              a.ui-menu__link(href="#") ВОЙСЕРЫ #[br]
+              a.ui-menu__link(href="#") РАСПИСАНИЕ
+            .ui-menu__item
+              a.ui-menu__link(href="#") АНОНСЫ #[br]
+              a.ui-menu__link(href="#") СТАТИСТИКА
+        .ui-footer-menu-right
+          .ui-menu
+            .ui-menu__item
+              a.ui-menu__link(href="#") Помощь проекту #[br]
+              a.ui-menu__link(href="#") Правила #[br]
+              a.ui-menu__link(href="#") Обратная связь
+    .ui-footer__copyright
+      .ui-copyright
+        .ui-copyright__statistics
+          img(src="/images/statistics.png")
+        .ui-copyright__text Copyright © 2016-2017 ANIMAUNT.RU. Все права защищены. #[br] Мы не индексируем и не храним никаких нелегальных материалов или материалов, защищенных авторским правом.
+          
 
   block scripts
     script(src= baseUrl + 'scripts/main.js')

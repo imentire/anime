@@ -69,12 +69,14 @@
       "images": "_images",
       "styles": "_styles",
       "scripts": "_scripts",
+      "fonts": "_fonts",
       "data": "_data"
     },
     "//": "Entry files",
     "entries": {
       "js": "main**.js",
-      "css": "main**.styl"
+      "css": "main**.styl",
+      "font": "**/*.{eot,otf,svg,ttf,woff,woff2}"
     }
   }
 }

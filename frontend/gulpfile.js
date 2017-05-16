@@ -43,6 +43,7 @@ gulp.task('default', ['clean'], function() {
 // Build production-ready code
 gulp.task('build', [
   'copy',
+  'fonts',
   'imagemin',
   'jade',
   'stylus',
@@ -53,6 +54,7 @@ gulp.task('build', [
 gulp.task('serve', [
   'imagemin',
   'copy',
+  'fonts',
   'jade',
   'stylus',
   'browserify',
