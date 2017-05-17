@@ -3,4 +3,24 @@ extends _layouts/base
 include _modules/link/link
 
 block content
-  .ui-page главная
+  .ui-home-page-banner(style="background-image: url('/images/banner.png')")
+    .ui-home-page-banner__content
+      .ui-home-page-banner__header.ui-heading.ui-heading--white.ui-heading--lvl1 Более 10 000 аниме и манги Оригинальнй перевод. 
+      .ui-home-page-banner__text Оригинальнй перевод. Оригинальная озвучка
+      search.ui-home-page-banner__search
+        input.ui-input.ui-home-page-search.ui-search(type="text")
+        button.ui-button.ui-button__search(type="submit") Найти
+      a.ui-home-page-banner__random-search 
+        .ui-random-search(style="background-image: url('/images/random.png')") 
+          span Мне повезёт
+      .ui-home-page-banner__anime-of-the-day
+        .ui-anime-of-the-day
+          .ui-anime-of-the-day__img
+            img(src="/images/animeoftheday.png")
+          .ui-anime-of-the-day__info
+            .ui-anime-of-the-day__header Аниме дня
+            .ui-anime-of-the-day__name Эльфийская песнь
+            .ui-anime-of-the-day__link
+              a.ui-anime-of-the-day__watch Смотреть 
+              a.ui-anime-of-the-day__torrent Торрент
+      .ui-home-page-link

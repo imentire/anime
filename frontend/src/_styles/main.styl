@@ -3,6 +3,9 @@
 
 // Import Modules
 @import 'modules/fonts';
+@import 'modules/heading';
+@import 'modules/form';
+@import 'modules/button';
 
 // Box sizing partial styles
 // Apply a natural box layout model to all elements
@@ -89,3 +92,107 @@
     line-height 18px
     color #2e2e2e
     padding-top 22px
+
+.ui-home-page-banner
+  background-size cover
+  background-repeat no-repeat
+  background-position 50% 50%
+
+  &__content
+    display flex
+    flex-direction column
+    align-items center
+    height 100%
+
+  &__header
+    padding-top 250px
+
+  &__text
+    font-family 'FuturaPT-Book'
+    font-size 18px
+    color #fff
+    padding-bottom  85px
+
+  &__search
+    position relative
+    width 700px
+    box-shadow 0px 13px 59px 0px rgba(0, 0, 0, 0.35)
+
+  &__random-search
+    padding-top 25px
+    font-family 'FuturaPT-Bold'
+    font-size 24px
+    color #fff
+
+  &__anime-of-the-day
+    padding 135px 0 23px 26px
+    display flex
+    align-self flex-start
+
+.ui-home-page-search
+  width 100%
+  height 100%
+  font-family 'FuturaPT-Book'
+  font-size 22px
+  padding 22px
+
+.ui-random-search
+  background-repeat no-repeat
+  background-position 0% 50%
+  padding-left 44px
+  height 34px
+  position relative
+
+  span
+    z-index 2
+    position relative
+
+  &:before
+    content ''
+    border 4px solid #f80000
+    width 140px
+    height 0
+    margin-left -39px
+    position: absolute
+    display block
+    bottom 4px
+    left 50%
+    z-index 1
+
+.ui-anime-of-the-day
+  display flex
+  align-items center
+
+  &__img
+    border 4px solid #e9eadf
+    border-radius 50%
+    display flex
+    width 64px
+    height 64px
+    justify-content center
+    align-items center
+
+  &__info
+    padding-left 20px
+
+  &__header
+    font-family 'FuturaPT-Bold'
+    font-size 24px
+    color #fff
+
+  &__name
+    font-family 'FuturaPT-Book'
+    font-size 18px
+    color #fff
+
+  &__link
+    font-family 'FuturaPT-Book'
+    font-size 18px
+    color #f80000
+
+  &__watch
+    border-right 2px solid #fff
+    padding-right 8px
+
+  &__torrent
+    padding-left 8px
