@@ -7,6 +7,9 @@
 @import 'modules/form';
 @import 'modules/button';
 @import 'modules/film-cart';
+@import 'modules/video-cart';
+@import 'modules/news-cart';
+@import 'modules/blog-cart';
 
 // Box sizing partial styles
 // Apply a natural box layout model to all elements
@@ -298,3 +301,60 @@
     font-size 18px
     line-height 30px
     padding-left 30px
+
+.ui-home-page-youtube
+  background-repeat no-repeat
+  background-position 100% 100%
+  background-size cover
+
+
+  &__content
+    width 980px
+    padding 70px 10px
+    margin 0 auto
+
+  &__title
+    display flex
+    align-items center
+
+  &__link
+    padding-left 26px
+    font-family 'FuturaPT-Book'
+    font-size 18px
+    color #fff
+    cursor pointer
+    text-decoration none
+
+  &__video
+    padding-top 45px
+    display flex
+    justify-content space-between
+
+.ui-home-page-news
+  background #e9eadf
+
+  &__content
+    width 980px
+    padding 70px 10px
+    margin 0 auto
+    display flex
+
+  &__content-left
+    width 614px
+
+  &__content-right
+    width 366px
+    padding-left 40px
+
+  &__title
+    display flex
+    align-items center
+    padding-bottom 20px
+
+  &__link
+    padding-left 26px
+    font-family 'FuturaPT-Book'
+    font-size 18px
+    color #f80000
+    cursor pointer
+    text-decoration none
