@@ -9,7 +9,7 @@ block content
       .ui-home-page-banner__text Оригинальнй перевод. Оригинальная озвучка
       search.ui-home-page-banner__search
         input.ui-input.ui-home-page-search.ui-search(type="text")
-        button.ui-button.ui-button__search(type="submit") Найти
+        a.ui-button.ui-button__search(type="submit") Найти
       a.ui-home-page-banner__random-search 
         .ui-random-search(style="background-image: url('/images/random.png')") 
           span Мне повезёт
@@ -23,4 +23,140 @@ block content
             .ui-anime-of-the-day__link
               a.ui-anime-of-the-day__watch Смотреть 
               a.ui-anime-of-the-day__torrent Торрент
-      .ui-home-page-link
+  .ui-home-page-menu
+    a.ui-home-page-menu__link
+      span Дорамы
+    a.ui-home-page-menu__link 
+      span Манги
+    a.ui-home-page-menu__link 
+      span Аниме
+  .ui-home-page-top
+    .ui-home-page-top__content
+      .ui-home-page-top__header.ui-heading.ui-heading--lvl1 Топ сезона
+      .ui-home-page-top__link
+        a.ui-button.ui-button--md.ui-button--white.ui-button--no-indent Самый топчик 
+        a.ui-button.ui-button--md.ui-button--white.ui-button--no-indent Дорамы 
+        a.ui-button.ui-button--md.ui-button--white.ui-button--no-indent Манга 
+        a.ui-button.ui-button--md.ui-button--white.ui-button--no-indent Аниме
+      .ui-home-page-top__film
+        .ui-film-cart
+          .ui-film-cart__img(style="background-image: url('/images/film/1.png')")
+            .ui-film-cart__box
+              a.ui-film-cart__watch(href="#")
+                img(src="/images/icon/watch.png")
+              a.ui-film-cart__download(href="#")
+                img(src="/images/icon/download.png")
+              .ui-film-cart__time До следующей серии #[br] 6 дней 23:53:10 
+          .ui-film-cart__title
+            .ui-film-cart__name Ван пис
+            .ui-film-cart__see 
+              .ui-film-cart__calculator 5592
+              img(src="/images/icon/see.png")
+          .ui-film-cart__description Приключения, Комедия, #[br] Фэнтези, Сенен
+        .ui-film-cart
+          .ui-film-cart__img(style="background-image: url('/images/film/2.png')")
+            .ui-film-cart__box
+              a.ui-film-cart__watch(href="#")
+                img(src="/images/icon/watch.png")
+              a.ui-film-cart__download(href="#")
+                img(src="/images/icon/download.png")
+              .ui-film-cart__time До следующей серии #[br] 6 дней 23:53:10 
+          .ui-film-cart__title
+            .ui-film-cart__name Скитальцы
+            .ui-film-cart__see 
+              .ui-film-cart__calculator 1068
+              img(src="/images/icon/see.png")
+          .ui-film-cart__description Приключения, Сенен, #[br] Комедия, Исторический, Экшен
+        .ui-film-cart
+          .ui-film-cart__img(style="background-image: url('/images/film/3.png')")
+            .ui-film-cart__box
+              a.ui-film-cart__watch(href="#")
+                img(src="/images/icon/watch.png")
+              a.ui-film-cart__download(href="#")
+                img(src="/images/icon/download.png")
+              .ui-film-cart__time До следующей серии #[br] 6 дней 23:53:10 
+          .ui-film-cart__title
+            .ui-film-cart__name Повар боец сома 2
+            .ui-film-cart__see 
+              .ui-film-cart__calculator 1068
+              img(src="/images/icon/see.png")
+          .ui-film-cart__description Комедия, Романтика, Драма, #[br] Сенен, Этти, Кулинария
+  .ui-home-page-popular
+    .ui-home-page-popular__content
+      .ui-home-page-popular__content-left
+        .ui-home-page-popular__title
+          img(src="/images/icon/star.png")
+          .ui-home-page-popular__header.ui-heading.ui-heading--lvl2 Популярное    
+          a.ui-home-page-popular__link(href="#") Весь список
+        .ui-home-page-popular__film
+          .ui-film-cart-small
+            a.ui-film-cart-small__link
+              img(src="/images/film/popular1.png")
+          .ui-film-cart-small
+            a.ui-film-cart-small__link
+              img(src="/images/film/popular2.png")
+          .ui-film-cart-small
+            a.ui-film-cart-small__link
+              img(src="/images/film/popular3.png") 
+        .ui-home-page-popular__film
+          .ui-film-cart-small
+            a.ui-film-cart-small__link
+              img(src="/images/film/popular1.png")
+          .ui-film-cart-small
+            a.ui-film-cart-small__link
+              img(src="/images/film/popular2.png")
+          .ui-film-cart-small
+            a.ui-film-cart-small__link
+              img(src="/images/film/popular3.png")
+      .ui-home-page-popular__content-right
+        .ui-home-page-popular__title
+          img(src="/images/icon/crown.png")
+          .ui-home-page-popular__header.ui-heading.ui-heading--lvl2 Самое популярное
+        .ui-home-page-popular__list
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Город, в котором меня нет
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Кулинарная битва Сомы
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Кулинарная битва Сомы
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Жизнь с нуля
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Измерение «W»9.5
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Ванпанчмен
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Ван-пис: золото
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Наруто ураганные хроники
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Две звезды онмеджи
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Повар боец сома 2
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Жизнь в альтернативном #[br] мире с нуля
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Скитальцы
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Синий экзорцист
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Гинтама тв 5
+          a.ui-home-page-popular__link-film
+            .ui-home-page-popular__rating 9.6
+            .ui-home-page-popular__name Ван-пис: золотое сердце
+  .ui-home-page-youtube
+    

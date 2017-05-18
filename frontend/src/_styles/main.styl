@@ -6,6 +6,7 @@
 @import 'modules/heading';
 @import 'modules/form';
 @import 'modules/button';
+@import 'modules/film-cart';
 
 // Box sizing partial styles
 // Apply a natural box layout model to all elements
@@ -189,6 +190,7 @@
     font-family 'FuturaPT-Book'
     font-size 18px
     color #f80000
+    cursor pointer
 
   &__watch
     border-right 2px solid #fff
@@ -196,3 +198,103 @@
 
   &__torrent
     padding-left 8px
+
+.ui-home-page-menu
+  width 980px
+  margin 0 auto
+  padding 48px 10px
+  display flex
+  justify-content space-around
+
+  &__link
+    font-family 'FuturaPT-Bold'
+    font-size 24px
+    color #2e2e2e
+    position relative
+
+    span
+      z-index 3
+      position relative
+
+    &:before
+      content ''
+      border 4px solid #f80000
+      width 85px
+      height 0
+      margin-left -27px
+      position: absolute
+      display block
+      bottom 3px
+      left 50%
+      z-index 1
+
+.ui-home-page-top
+  padding 56px 0 86px
+  background #e9eadf
+
+  &__header
+    padding-bottom 24px
+
+  &__content
+    width 980px
+    padding 0 10px
+    margin 0 auto
+
+  &__link
+    display flex
+
+  &__film
+    padding-top 50px
+    display flex
+    justify-content space-between
+
+.ui-home-page-popular
+
+  &__content
+    width 980px
+    padding 70px 10px
+    margin 0 auto
+    display flex
+
+  &__content-left
+    width 614px
+
+  &__content-right
+    padding-left 50px
+
+  &__title
+    display flex
+    align-items center
+    padding-bottom 20px
+
+  &__header
+    padding-left 8px
+
+  &__link
+    padding-left 26px
+    font-family 'FuturaPT-Book'
+    font-size 18px
+    color #f80000
+    cursor pointer
+    text-decoration none
+
+  &__film
+    display flex
+    justify-content space-between
+
+  &__list
+    padding-top 20px
+
+  &__link-film
+    display flex
+
+  &__rating
+    font-family 'FuturaPT-Bold'
+    font-size 18px
+    line-height 30px
+
+  &__name
+    font-family 'FuturaPT-Book'
+    font-size 18px
+    line-height 30px
+    padding-left 30px
