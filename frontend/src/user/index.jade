@@ -1,0 +1,80 @@
+extends ../_layouts/base
+
+block config
+  - var baseUrl = '../'
+
+block content
+  .ui-page-search
+    search.ui-search
+      input.ui-input.ui-search__input(type="text")
+      a.ui-button.ui-button__search.ui-button--xs(type="submit") Найти
+  .ui-page
+    .ui-page__header Личный кабинет
+    .ui-user-cart
+      .ui-user-cart__photo
+        img(src="/images/user/avatar.png")
+        a.ui-user-cart__link Выбрать файл для аватара
+        a.ui-user-cart__link Удалить аватар
+      .ui-user-cart__description
+        ul.ui-user-info
+          li.ui-user-info__item Никнейм: Hayns
+          li.ui-user-info__item Полное имя: Евгений
+          li.ui-user-info__item Группа: Посетители
+          li.ui-user-info__item &nbsp
+          li.ui-user-info__item Количество публикаций: 0 &nbsp
+            a.ui-user-cart__link Просмотреть все публикации
+          li.ui-user-info__item Количество комментариев: 0 &nbsp
+            a.ui-user-cart__link Последние комментарии
+          li.ui-user-info__item &nbsp
+          li.ui-user-info__item Дата регистрации: 30 апреля 2017 14:25
+          li.ui-user-info__item Последнее посещение: 30 апреля 2017 14:25 &nbsp
+            span.ui-status.ui-status--online ON-LINE 
+          li.ui-user-info__item Место проживания: Неизвестно
+          li.ui-user-info__item Ваш IP: 5.139.179.210
+    .ui-user-settings
+      .ui-user-settings__header
+        .ui-heading.ui-heading--lvl2 Настройки пользователя
+        hr.ui-line.ui-line--xs
+        a.ui-link Скрыть
+      form.ui-settings
+        .ui-settings__group
+          .ui-settings__text Ваше Имя
+          input.ui-input.ui-input--grey(type="text", placeholder="Евгений")
+        hr.ui-line
+        .ui-settings__group
+          .ui-settings__text Электронная почта
+          input.ui-input.ui-input--grey(type="text", placeholder="Zhoraha@gmail.com")
+          .ui-settings__checked
+            label
+              input.ui-checked(type="checkbox")
+              span Не получать письма от других 
+          .ui-settings__checked
+            label
+              input.ui-checked(type="checkbox")
+              span Отписаться от подписанных новостей
+        hr.ui-line
+        .ui-settings__group
+          .ui-settings__text Место проживания
+          textarea.ui-textarea(type="text")
+        hr.ui-line
+        .ui-settings__group
+          .ui-settings__text Смена пароля
+          .ui-row
+            input.ui-input.ui-input--grey(type="text", placeholder="Старый пароль") 
+          .ui-row
+            input.ui-input.ui-input--grey(type="text", placeholder="Новый пароль")
+          .ui-row
+            input.ui-input.ui-input--grey(type="text", placeholder="Повторите новый пароль")
+          .ui-row
+            button.ui-button.ui-button--xs Изменить пароль
+        hr.ui-line
+        .ui-settings__group
+          .ui-settings__text Ваша подпись в комментариях
+          textarea.ui-textarea.ui-textarea--long(type="text", placeholder="Не заполняйте данное поле, т.к. для Вашей группы запрещено использование подписи в комментариях.")
+        hr.ui-line
+        .ui-settings__group
+          .ui-settings__text О себе
+          textarea.ui-textarea.ui-textarea--long(type="text", placeholder="Расскажите о себе и ваших интересах")
+        hr.ui-line
+        .ui-row
+          button.ui-button.ui-button--xs Сохранить изменения
