@@ -12,6 +12,7 @@
 @import 'modules/news-cart';
 @import 'modules/blog-cart';
 @import 'modules/user-cart';
+@import 'modules/comment-cart';
 
 // Box sizing partial styles
 // Apply a natural box layout model to all elements
@@ -406,12 +407,18 @@
   &--xs
     width 60%
 
+  &--md
+    width 760px
+
 .ui-link
   font-family 'FuturaPT-Book'
   font-size 18px
   line-height 30px
   color #ff0000
   cursor pointer
+
+  span
+    color #2e2e2e
 
 .ui-settings
 
@@ -472,3 +479,49 @@
 
     span
       padding-left 10px
+
+.ui-film-relations
+  background #35363e
+
+  &__content
+    width 980px
+    padding 70px 10px 60px 10px
+    margin 0 auto
+
+  &__button
+    text-align center
+
+.ui-video
+  width 980px
+  padding 70px 10px
+  margin 0 auto
+
+  &__link
+    padding 20px 0
+    display flex
+    justify-content space-between
+
+  &__write
+    display flex
+    align-items center
+
+    span
+      padding-left 12px
+
+.ui-comment
+
+  &__button
+    text-align center
+
+.ui-recommendations
+  background #e9eadf
+
+  &__content
+    width 980px
+    padding 70px 10px
+    margin 0 auto
+
+  &__film
+    display flex
+    justify-content space-between
+    padding-top 40px

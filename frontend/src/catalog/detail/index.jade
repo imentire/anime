@@ -1,0 +1,176 @@
+extends ../../_layouts/base
+
+block config
+    //- Correct base url pathing for this page
+    - var baseUrl = '../../'
+
+block content
+  .ui-film-cart-detail
+    .ui-film-cart-detail__content
+      .ui-film-cart-detail__img
+        img(src="/images/film/1.png")
+      .ui-film-cart-detail__description
+        .ui-film-cart-detail__header
+          .ui-film-cart-detail__title Ван пис 
+            span One piece
+          .ui-film-cart-detail__like-info Нравится 
+            span 5628
+        hr.ui-line
+        .ui-film-cart-detail__info
+          ul.ui-film-info
+            li.ui-film-info__item Год выхода 
+            li.ui-film-info__item Жанр 
+            li.ui-film-info__item Возрастное ограничение
+            li.ui-film-info__item Тип
+            li.ui-film-info__item Студия
+            li.ui-film-info__item Озвучка
+          ul.ui-film-info.ui-film-info--light
+            li.ui-film-info__item 1999г.
+            li.ui-film-info__item 
+              a.ui-link Приключения
+                span , 
+              a.ui-link Комедия
+                span , 
+              a.ui-link Фэнтези
+                span ,  
+              a.ui-link Сенен
+            li.ui-film-info__item 12+
+            li.ui-film-info__item ТВ, 760+ эп. по 25 мин
+            li.ui-film-info__item 
+              a.ui-link Toei Animation
+            li.ui-film-info__item 
+              a.ui-link Shachiburi
+        hr.ui-line
+        .ui-film-cart-detail__menu
+          .ui-film-cart-detail__favorites
+            img(src="/images/icon/favorites.png")
+            span В избранное
+          .ui-film-cart-detail__like
+            img(src="/images/icon/like.png")
+            span Нравится
+          .ui-film-cart-detail__time До выхода новой серии: 
+            span 4 дня 23:45:11
+        hr.ui-line
+        .ui-film-cart-detail__text
+          p.
+            Рассказывать про Ван Пис - наверняка никому не нужно, это аниме про пиратов знают все-все-все. А даже те, кто не смотрел его и не знают, что же это за зверь такой - все равно хоть раз слышали о нем в школе, институте, да везде. Ван Пис давно стал легендой и классикой аниме и манги, не только как самый длинный тайтл, но и как показатель высокого качества в Жанре Сенен. И похоже, что история не закончиться никогда - ведь автор даже не желает останавливаться! А вместе с ним и Ван Пис. Shachiburi меж тем, его переводит уже многие года, в течении 750+ серий, а его озвучка считается легендарной и лучшей. Как говорится - услышав раз, слушаю и сейчас. И только на нашем сайте Ван Пис озвучка Shachiburi официальна и выходит без задержек, ведь это его родной сайт.
+    .ui-film-cart-detail__photo
+      .ui-film-cart-detail__box
+        .ui-film-cart-detail__heading.ui-heading.ui-heading--lvl2 Кадры и постеры
+        hr.ui-line.ui-line--md
+      .ui-film-cart-detail__box
+        img(src="/images/film/poster1.png")
+        img(src="/images/film/poster2.png")
+        img(src="/images/film/poster3.png")
+        img(src="/images/film/poster4.png")
+        img(src="/images/film/poster5.png")
+  .ui-film-relations
+    .ui-film-relations__content
+      .ui-heading.ui-heading--white.ui-heading--lvl2 Связаные манги, аниме и прочее
+      ul.ui-relations
+        li.ui-relations__item
+          .ui-relations__img
+            img(src="/images/relations/1.png")
+          .ui-relations__name Ван Пис 
+            span &nbsp 1999
+        li.ui-relations__item
+          .ui-relations__img
+            img(src="/images/relations/2.png")
+          .ui-relations__name Ван-Пис: #[br] Фильм первый 
+            span &nbsp 2000
+        li.ui-relations__item
+          .ui-relations__img
+            img(src="/images/relations/3.png")
+          .ui-relations__name Ван-Пис: #[br] Фильм второй
+            span &nbsp 2001
+        li.ui-relations__item
+          .ui-relations__img
+            img(src="/images/relations/4.png")
+          .ui-relations__name Ван-Пис: #[br] Фильм третий 
+            span &nbsp 2002
+      .ui-film-relations__button
+        button.ui-button.ui-button--xs
+          .ui-dashed Показать все связи
+  .ui-video
+    .ui-video__player
+      img(src="/images/player.png")
+    .ui-video__link
+      .ui-video__write
+        img(src="/images/icon/write.png")
+        span Написать нам
+      .ui-video__share
+        .ui-share
+          img(src="/images/icon/share.png")
+    .ui-video__comments
+      .ui-comment
+        .ui-comment-cart
+          .ui-comment-cart__img
+            img(src="/images/user/1.png")
+          .ui-comment-cart__content
+            .ui-comment-cart__header
+              a.ui-comment-cart__name Anitian 
+              .ui-comment-cart__time 30 минут назад
+            .ui-comment-cart__text Где был чоппер в битве на дресс роуз ?
+            a.ui-link Ответить
+        .ui-comment-cart
+          .ui-comment-cart__img
+            img(src="/images/user/2.png")
+          .ui-comment-cart__content
+            .ui-comment-cart__header
+              a.ui-comment-cart__name VLADLEN  
+              .ui-comment-cart__time 33 минут назад
+            .ui-comment-cart__text озвучка тянок в 578 серии.... как же непривычно..
+            a.ui-link Ответить
+        .ui-comment-cart
+          .ui-comment-cart__img
+            img(src="/images/user/3.png")
+          .ui-comment-cart__content
+            .ui-comment-cart__header
+              a.ui-comment-cart__name ОЛЕГ ФИНИНКО 
+              .ui-comment-cart__time 59 минут назад
+            .ui-comment-cart__text я пытался найти в гугл плей ту игру торую он рекламирует у меня не находит!!!
+            a.ui-link Ответить  
+        .ui-comment-cart-lvl2
+          .ui-comment-cart-lvl2__img
+            img(src="/images/user/xs1.png")
+          .ui-comment-cart-lvl2__content
+            .ui-comment-cart-lvl2__header
+              a.ui-comment-cart-lvl2__name Кирил Киселёв
+              .ui-comment-cart-lvl2__time Более часа назад
+            .ui-comment-cart-lvl2__text У меня все сразу нашло. Ты через плей маркет искал?
+            a.ui-link Ответить
+        .ui-comment-cart-lvl2
+          .ui-comment-cart-lvl2__img
+            img(src="/images/user/xs2.png")
+          .ui-comment-cart-lvl2__content
+            .ui-comment-cart-lvl2__header
+              a.ui-comment-cart-lvl2__name Ксюша
+              .ui-comment-cart-lvl2__time Более часа назад
+            .ui-comment-cart-lvl2__text Руки просто выровни 
+            a.ui-link Ответить
+        .ui-comment-cart
+          .ui-comment-cart__img
+            img(src="/images/user/4.png")
+          .ui-comment-cart__content
+            .ui-comment-cart__header
+              a.ui-comment-cart__name САХАРНЫЙ ПАКЕТ
+              .ui-comment-cart__time Более часа назад
+            .ui-comment-cart__text Ван пис самое лучшее аниме среди всех многосерийных!!!
+            a.ui-link Ответить
+        .ui-comment__button
+          button.ui-button.ui-button--xs
+            .ui-dashed Показать все комменты
+  .ui-recommendations
+    .ui-recommendations__content
+      .ui-heading.ui-heading--lvl2 Рекомендуем посмотреть
+      .ui-recommendations__film
+        a.ui-recommendations__link
+          img(src="/images/film/recommendation1.png")
+        a.ui-recommendations__link
+          img(src="/images/film/recommendation1.png")
+        a.ui-recommendations__link
+          img(src="/images/film/recommendation1.png")
+        a.ui-recommendations__link
+          img(src="/images/film/recommendation1.png")
+        a.ui-recommendations__link
+          img(src="/images/film/recommendation1.png")
