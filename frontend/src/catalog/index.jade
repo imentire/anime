@@ -1,0 +1,253 @@
+extends ../_layouts/base
+
+block config
+  - var baseUrl = '../'
+
+block content
+  .ui-page-search
+    search.ui-search
+      input.ui-input.ui-search__input(type="text")
+      a.ui-button.ui-button__search.ui-button--xs(type="submit") Найти
+  .ui-page
+    .ui-page__header Каталог
+    hr.ui-line
+    .ui-catalog
+      .ui-catalog__sidebar
+        .ui-sidebar
+          .ui-sidebar__button
+            img(src="/images/icon/arrow.png") 
+            span Жанры
+          ul.ui-sidebar-menu 
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Апокалипсис
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Комедия
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Самурайское
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Боевик
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Космос
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Сёдзё
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Боевые искуства
+          a.ui-link Показать еще
+          hr.ui-line
+          .ui-sidebar__button
+            img(src="/images/icon/arrow.png") 
+            span Года
+          ul.ui-sidebar-menu 
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span 2017
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span 2016
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span 2015
+          a.ui-link Показать еще
+          hr.ui-line
+          .ui-sidebar__button
+            img(src="/images/icon/arrow.png") 
+            span Войсеры
+          ul.ui-sidebar-menu 
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Aronilo
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Ban
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Eva
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Фрейн
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Gin
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Greentalker
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Leoneo
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Kalifor
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Namakimon
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Ron
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Shachiburi
+            li.ui-sidebar-menu__item 
+              label
+                input.ui-checked.ui-checked--small(type="checkbox")
+                span Vielis
+      .ui-catalog__content
+        .ui-catalog__sorting
+          span Сначала новинки
+          img(src="/images/icon/arrow.png") 
+        .ui-catalog__film
+          .ui-film-cart-average
+            .ui-film-cart-average__img(style="background-image: url('/images/film/catalog1.png')")
+              .ui-film-cart-average__box
+                a.ui-film-cart-average__watch(href="#")
+                  img(src="/images/icon/watch.png")
+                a.ui-film-cart-average__download(href="#")
+                  img(src="/images/icon/download.png")
+                .ui-film-cart-average__time До следующей серии #[br] 6 дней 23:53:10 
+            .ui-film-cart-average__title
+              .ui-film-cart-average__name Ван пис
+              .ui-film-cart-average__see 
+                .ui-film-cart-average__calculator 5592
+                img(src="/images/icon/see.png")
+            .ui-film-cart-average__description Приключения, Комедия, #[br] Фэнтези, Сенен
+          .ui-film-cart-average
+            .ui-film-cart-average__img(style="background-image: url('/images/film/catalog1.png')")
+              .ui-film-cart-average__box
+                a.ui-film-cart-average__watch(href="#")
+                  img(src="/images/icon/watch.png")
+                a.ui-film-cart-average__download(href="#")
+                  img(src="/images/icon/download.png")
+                .ui-film-cart-average__time До следующей серии #[br] 6 дней 23:53:10 
+            .ui-film-cart-average__title
+              .ui-film-cart-average__name Ван пис
+              .ui-film-cart-average__see 
+                .ui-film-cart-average__calculator 5592
+                img(src="/images/icon/see.png")
+            .ui-film-cart-average__description Приключения, Комедия, #[br] Фэнтези, Сенен
+          .ui-film-cart-average
+            .ui-film-cart-average__img(style="background-image: url('/images/film/catalog1.png')")
+              .ui-film-cart-average__box
+                a.ui-film-cart-average__watch(href="#")
+                  img(src="/images/icon/watch.png")
+                a.ui-film-cart-average__download(href="#")
+                  img(src="/images/icon/download.png")
+                .ui-film-cart-average__time До следующей серии #[br] 6 дней 23:53:10 
+            .ui-film-cart-average__title
+              .ui-film-cart-average__name Ван пис
+              .ui-film-cart-average__see 
+                .ui-film-cart-average__calculator 5592
+                img(src="/images/icon/see.png")
+            .ui-film-cart-average__description Приключения, Комедия, #[br] Фэнтези, Сенен
+        .ui-catalog__film
+          .ui-film-cart-average
+            .ui-film-cart-average__img(style="background-image: url('/images/film/catalog1.png')")
+              .ui-film-cart-average__box
+                a.ui-film-cart-average__watch(href="#")
+                  img(src="/images/icon/watch.png")
+                a.ui-film-cart-average__download(href="#")
+                  img(src="/images/icon/download.png")
+                .ui-film-cart-average__time До следующей серии #[br] 6 дней 23:53:10 
+            .ui-film-cart-average__title
+              .ui-film-cart-average__name Ван пис
+              .ui-film-cart-average__see 
+                .ui-film-cart-average__calculator 5592
+                img(src="/images/icon/see.png")
+            .ui-film-cart-average__description Приключения, Комедия, #[br] Фэнтези, Сенен
+          .ui-film-cart-average
+            .ui-film-cart-average__img(style="background-image: url('/images/film/catalog1.png')")
+              .ui-film-cart-average__box
+                a.ui-film-cart-average__watch(href="#")
+                  img(src="/images/icon/watch.png")
+                a.ui-film-cart-average__download(href="#")
+                  img(src="/images/icon/download.png")
+                .ui-film-cart-average__time До следующей серии #[br] 6 дней 23:53:10 
+            .ui-film-cart-average__title
+              .ui-film-cart-average__name Ван пис
+              .ui-film-cart-average__see 
+                .ui-film-cart-average__calculator 5592
+                img(src="/images/icon/see.png")
+            .ui-film-cart-average__description Приключения, Комедия, #[br] Фэнтези, Сенен
+          .ui-film-cart-average
+            .ui-film-cart-average__img(style="background-image: url('/images/film/catalog1.png')")
+              .ui-film-cart-average__box
+                a.ui-film-cart-average__watch(href="#")
+                  img(src="/images/icon/watch.png")
+                a.ui-film-cart-average__download(href="#")
+                  img(src="/images/icon/download.png")
+                .ui-film-cart-average__time До следующей серии #[br] 6 дней 23:53:10 
+            .ui-film-cart-average__title
+              .ui-film-cart-average__name Ван пис
+              .ui-film-cart-average__see 
+                .ui-film-cart-average__calculator 5592
+                img(src="/images/icon/see.png")
+            .ui-film-cart-average__description Приключения, Комедия, #[br] Фэнтези, Сенен
+        .ui-catalog__film
+          .ui-film-cart-average
+            .ui-film-cart-average__img(style="background-image: url('/images/film/catalog1.png')")
+              .ui-film-cart-average__box
+                a.ui-film-cart-average__watch(href="#")
+                  img(src="/images/icon/watch.png")
+                a.ui-film-cart-average__download(href="#")
+                  img(src="/images/icon/download.png")
+                .ui-film-cart-average__time До следующей серии #[br] 6 дней 23:53:10 
+            .ui-film-cart-average__title
+              .ui-film-cart-average__name Ван пис
+              .ui-film-cart-average__see 
+                .ui-film-cart-average__calculator 5592
+                img(src="/images/icon/see.png")
+            .ui-film-cart-average__description Приключения, Комедия, #[br] Фэнтези, Сенен
+          .ui-film-cart-average
+            .ui-film-cart-average__img(style="background-image: url('/images/film/catalog1.png')")
+              .ui-film-cart-average__box
+                a.ui-film-cart-average__watch(href="#")
+                  img(src="/images/icon/watch.png")
+                a.ui-film-cart-average__download(href="#")
+                  img(src="/images/icon/download.png")
+                .ui-film-cart-average__time До следующей серии #[br] 6 дней 23:53:10 
+            .ui-film-cart-average__title
+              .ui-film-cart-average__name Ван пис
+              .ui-film-cart-average__see 
+                .ui-film-cart-average__calculator 5592
+                img(src="/images/icon/see.png")
+            .ui-film-cart-average__description Приключения, Комедия, #[br] Фэнтези, Сенен
+          .ui-film-cart-average
+            .ui-film-cart-average__img(style="background-image: url('/images/film/catalog1.png')")
+              .ui-film-cart-average__box
+                a.ui-film-cart-average__watch(href="#")
+                  img(src="/images/icon/watch.png")
+                a.ui-film-cart-average__download(href="#")
+                  img(src="/images/icon/download.png")
+                .ui-film-cart-average__time До следующей серии #[br] 6 дней 23:53:10 
+            .ui-film-cart-average__title
+              .ui-film-cart-average__name Ван пис
+              .ui-film-cart-average__see 
+                .ui-film-cart-average__calculator 5592
+                img(src="/images/icon/see.png")
+            .ui-film-cart-average__description Приключения, Комедия, #[br] Фэнтези, Сенен

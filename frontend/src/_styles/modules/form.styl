@@ -71,3 +71,19 @@
     -webkit-transform rotateZ(45deg)
     margin -10px 13px
     pointer-events none
+
+  &--small
+    width 20px
+    height 20px
+    border-radius 6px
+
+    &:checked:before
+      content ""
+      display block
+      width 15px
+      height 20px
+      border 0 solid #ff0000
+      border-width 0 2px 2px 0
+      -webkit-transform rotateZ(45deg)
+      margin -5px 5px
+      pointer-events none
