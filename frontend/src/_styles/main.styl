@@ -552,3 +552,56 @@
   background #e9eadf
   padding 30px
   margin-top 15px
+
+.ui-page-timetable
+
+  &__header
+    text-align center
+
+  &__date
+    display flex
+    justify-content center
+    padding 30px 0
+
+  &__film
+    padding 70px 0
+    display flex
+    justify-content space-between
+
+  &__navigation
+    padding 30px 0
+    display flex
+    justify-content space-between
+
+.ui-date
+  margin 0 8px
+  width 70px
+
+  &__top
+    height 9px
+    border-bottom 3px solid #e9eadf
+    background #e9eadf
+
+  &__content
+    border 3px solid #e9eadf
+    border-top 0
+    height 57px
+    text-align center
+    display flex
+    align-items center
+    flex-wrap wrap
+    justify-content center
+    font-family 'FuturaPT-Demi'
+    font-size 24px
+
+    span
+      display block
+      width 100%
+      font-family 'FuturaPT-Book'
+      font-size 16px
+
+  &--active
+    & ^[0]__top
+      border-color #fff
+    & ^[0]__content
+      background #e9eadf
