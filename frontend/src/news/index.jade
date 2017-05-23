@@ -1,0 +1,50 @@
+extends ../_layouts/base
+
+block config
+  - var baseUrl = '../'
+
+block content
+  .ui-page-search
+    search.ui-search
+      input.ui-input.ui-search__input(type="text")
+      a.ui-button.ui-button__search.ui-button--xs(type="submit") Найти
+  .ui-page
+    .ui-page-news
+      .ui-page-news__new
+        .ui-heading.ui-heading--light Свежии новости
+        .ui-news-cart-small
+          a.ui-news-cart-small__header Второй тизер - Стальний алхимик
+          .ui-news-cart-small__description Вкратце - мы представляем Вам список в более 50 тайтлов сезона аниме весны 2017 в нашей озвучке и многоголоске, полное расписание.
+          .ui-news-cart-small__see 
+            img(src="/images/icon/see-red.png")
+            span 946 Просмотра
+        hr.ui-line
+        .ui-news-cart-small
+          a.ui-news-cart-small__header Аниме весна 2017
+          .ui-news-cart-small__description Вкратце - мы представляем Вам список в более 50 тайтлов сезона аниме весны 2017 в нашей озвучке и многоголоске, полное расписание.
+          .ui-news-cart-small__see 
+            img(src="/images/icon/see-red.png")
+            span 4 062 Просмотра
+        hr.ui-line
+        .ui-news-cart-small
+          a.ui-news-cart-small__header Аниме весна 2017
+          .ui-news-cart-small__description Вкратце - мы представляем Вам список в более 50 тайтлов сезона аниме весны 2017 в нашей озвучке и многоголоске, полное расписание.
+          .ui-news-cart-small__see 
+            img(src="/images/icon/see-red.png")
+            span 4 062 Просмотра
+        hr.ui-line
+        a.ui-link.ui-link--lg Российское ТВ вину за преступления подростков возложило на аниме #[br]#[br]
+        a.ui-link.ui-link--lg Дело Соколовского: 3,5 года за «Анус себе заблокируй, Роскомнадзор»?! #[br]#[br]
+        a.ui-link.ui-link--lg Народное творчество по мотивам Outlast 2: веселые мемы, кровавый Блейк #[br]#[br]
+        a.ui-link.ui-link--lg Бэтмен встретил отца из параллельной вселенной, и он тоже Бэтмен
+      .ui-page-news__recommendations
+        .ui-heading.ui-heading--light Рекомендуем
+        .ui-recommendations
+          .ui-news-cart-recommendations(style="background-image: url('/images/news/recommendations1.png')")
+            .ui-news-cart-recommendations__title 
+              span Российское ТВ вину за преступления #[br]подростков возложило на аниме
+          .ui-news-cart-recommendations(style="background-image: url('/images/news/recommendations2.png')")
+            .ui-news-cart-recommendations__title 
+              span Народное творчество по мотивам #[br] Outlast 2: веселые мемы, кровавый Блейк
+              
+        
