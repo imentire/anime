@@ -12,6 +12,14 @@
     font-size 18px
     width 330px
 
+  &--form
+    border-radius 20px
+    background-color #fff
+    outline none
+    border 0
+    width 330px
+    height 60px
+    padding 25px 30px
 
 .ui-textarea
   background #e9eadf
@@ -72,6 +80,9 @@
     margin -10px 13px
     pointer-events none
 
+  &--white
+    background #fff
+
   &--small
     width 20px
     height 20px
@@ -87,3 +98,55 @@
       -webkit-transform rotateZ(45deg)
       margin -5px 5px
       pointer-events none
+
+.ui-form
+  display flex
+  flex-direction column
+  align-items center
+
+  &__close
+    width 64px
+    height 64px
+    border-radius 50%
+    background #f80000
+    display flex
+    align-items center
+    justify-content center
+    box-shadow 0px 15px 55px 0px rgba(0, 0, 0, 0.15)
+
+  &__content
+    box-shadow 0px 15px 55px 0px rgba(0, 0, 0, 0.15)
+    width 480px
+    border-radius 10px
+    background #e9eadf
+    padding 60px 75px
+    margin-top 20px
+    display flex
+    flex-direction column
+    align-items center
+
+    input
+      margin 10px 0
+
+    &--lg
+      padding 60px 65px
+
+  &__title
+    font-family 'FuturaPT-Book'
+    font-size 36px
+    padding-bottom 30px
+
+  &__text
+    font-family 'FuturaPT-Demi'
+    font-size 18px
+    padding 20px 0
+
+  label
+    display flex
+    align-items center
+
+  span
+    padding-left 20px
+
+  &__captcha
+    padding 20px 0 50px 0

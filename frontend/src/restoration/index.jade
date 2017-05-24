@@ -1,0 +1,21 @@
+extends ../_layouts/base
+
+block config
+  - var baseUrl = '../'
+
+block content
+  .ui-page-search
+    search.ui-search
+      input.ui-input.ui-search__input(type="text")
+      a.ui-button.ui-button__search.ui-button--xs(type="submit") Найти
+  .ui-page
+    .ui-form
+      .ui-form__close
+        img(src="/images/icon/close.png")
+      .ui-form__content.ui-form__content--lg
+        .ui-form__title Востановление доступа
+        input.ui-input.ui-input--form(type="text", placeholder="Ваша электронная почта или логин")
+        .ui-form__captcha
+          img(src="/images/captcha.png")
+        button.ui-button.ui-button--lg Начать востановление
+        

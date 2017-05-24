@@ -1,0 +1,28 @@
+extends ../_layouts/base
+
+block config
+  - var baseUrl = '../'
+
+block content
+  .ui-page-search
+    search.ui-search
+      input.ui-input.ui-search__input(type="text")
+      a.ui-button.ui-button__search.ui-button--xs(type="submit") Найти
+  .ui-page
+    .ui-form
+      .ui-form__close
+        img(src="/images/icon/close.png")
+      .ui-form__content
+        .ui-form__title Регистрация
+        input.ui-input.ui-input--form(type="text", placeholder="Логин")
+        input.ui-input.ui-input--form(type="text", placeholder="Пароль - надежный и простой")
+        input.ui-input.ui-input--form(type="text", placeholder="Повторите пароль")
+        input.ui-input.ui-input--form(type="text", placeholder="Электронная почта")
+        .ui-form__checked
+          label
+            input.ui-checked.ui-checked--white(type="checkbox")
+            span Принять правила
+        .ui-form__captcha
+          img(src="/images/captcha.png")
+        button.ui-button.ui-button--lg Зарегестрироваться
+        a.ui-form__text Я уже тут не первый раз - Вход

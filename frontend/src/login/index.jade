@@ -1,0 +1,22 @@
+extends ../_layouts/base
+
+block config
+  - var baseUrl = '../'
+
+block content
+  .ui-page-search
+    search.ui-search
+      input.ui-input.ui-search__input(type="text")
+      a.ui-button.ui-button__search.ui-button--xs(type="submit") Найти
+  .ui-page
+    .ui-form
+      .ui-form__close
+        img(src="/images/icon/close.png")
+      .ui-form__content
+        .ui-form__title Добро пожаловать
+        input.ui-input.ui-input--form(type="text", placeholder="Имя")
+        input.ui-input.ui-input--form(type="text", placeholder="Пароль")
+        a.ui-form__text Я забыл пароль
+        button.ui-button.ui-button--lg Вход
+        a.ui-form__text Регистрация
+        
